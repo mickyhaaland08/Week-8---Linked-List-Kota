@@ -14,7 +14,7 @@ int main() {
         printf("1. Tambah Kota\n");
         printf("2. Tambah Orang (Awal)\n");
         printf("3. Tambah Orang (Akhir)\n");
-        printf("4. Tambah Orang (Tengah - urut abjad)\n");
+        printf("4. Tambah Orang (Tengah)\n");
         printf("5. Tampilkan Semua Kota dan Orang\n");
         printf("6. Hapus Semua Orang dari Kota\n");
         printf("7. Keluar\n");
@@ -76,7 +76,7 @@ int main() {
                 for (KotaPTR kota = kotaList; kota != NULL; kota = kota->nextKota) {
                     if (strcmp(kota->namaKota, namaKota) == 0) {
                         insertTengah(kota, namaOrang);
-                        printf("Orang '%s' ditambahkan ke kota '%s' secara terurut.\n", namaOrang, namaKota);
+                        printf("Orang '%s' ditambahkan ke kota '%s'.\n", namaOrang, namaKota);
                         break;
                     }
                 }
